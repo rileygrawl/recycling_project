@@ -1,6 +1,6 @@
-Recyclable or Non-recyclable - A Classifier
+## Recyclable or Non-recyclable - A Classifier
 
- This is a retrained image recognition network that can differentiate recyclable objects from non-recyclable ones.> 
+ This is a retrained image recognition network that can differentiate recyclable objects from non-recyclable ones.
 
 
 
