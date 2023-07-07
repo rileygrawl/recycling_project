@@ -12,7 +12,11 @@ Using the Jetson Nano, I retrained resnet18 with a dataset I found on the Kaggle
 
 ## Running this project
 
-1. Download the network here: https://drive.google.com/file/d/1CePcv9R0T77dxrEvSNNRHs8jJ4RvDSAw/view?usp=drive_link
-2. Download the image you wish to classify.
+1. Download the model here: https://drive.google.com/file/d/1CePcv9R0T77dxrEvSNNRHs8jJ4RvDSAw/view?usp=drive_link
+2. Dowload labels.txt from this project.
+3. Clone the jetson-inference project from Github using: git clone --recursive https://github.com/dusty-nv/jetson-inference and cd into it.
+4. Make a build directory and run "cmake ../" in the directory
+5. To run an image through the model enter: "imagenet.py --model=[model]/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=[label]/labels.txt [image] [output] To clarify, [model] is the folder where resnet18.onnx is stored, [label] is the folder where the labels.txt file is stored, [image] is the image file you wish to classify, and [output] is the name of the file you want to output the results to.
+6. To attain the results you can scp the outputted file from the Jetson Nano onto your computer or just look at the feedback (as shown in video).
 
-[View a video explanation here](video link)
+View the video explanation here (video link)
